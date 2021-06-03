@@ -12,22 +12,22 @@ class Yot < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/vmware-tanzu-labs/yaml-overlay-tool/releases/download/v0.4.0/yot_v0.4.0_Darwin_x86_64.tar.gz"
-      sha256 "d75594100b6a4bae5d0fa53bc2032c3bb3e20d5f8ee27c9c89eb39ac17284d79"
+      sha256 "07f9a73764b11b71996e36543b27146fd54ef3298f71f9058791862e23d4e05b"
     end
     if Hardware::CPU.arm?
       url "https://github.com/vmware-tanzu-labs/yaml-overlay-tool/releases/download/v0.4.0/yot_v0.4.0_Darwin_arm64.tar.gz"
-      sha256 "e017ff4fa4a9f425f5cb6f7f096222373b5387ac417a977001377c1b52a9cc92"
+      sha256 "d047648d79938bfcda1d540d76ff888429fd82f71e586f0640e1089cabf52697"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/vmware-tanzu-labs/yaml-overlay-tool/releases/download/v0.4.0/yot_v0.4.0_Linux_x86_64.tar.gz"
-      sha256 "fd5f608ba618e05fc299145348734550fe97c107e1c44dbdcade08d2b1073b04"
+      sha256 "f40042dacdea07887e18107d7c34c447dc231cdf34f9255437ed542d5fb313fd"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/vmware-tanzu-labs/yaml-overlay-tool/releases/download/v0.4.0/yot_v0.4.0_Linux_arm64.tar.gz"
-      sha256 "200f334b4f5cfc9623cfec1462ad7708c2874c08b55a5a84c37b6a66b91eb703"
+      sha256 "252dc8fd17b22a19f5ee94ab4bc9a6e4a7afa3bb49b1762c2246c1bdd2c97299"
     end
   end
 

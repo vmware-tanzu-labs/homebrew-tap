@@ -5,29 +5,29 @@
 class Yot < Formula
   desc "A YAML Overlay Tool with templating tendencies."
   homepage "https://github.com/vmware-tanzu-labs/yaml-overlay-tool"
-  version "0.5.1"
+  version "0.6.0"
   license "MIT"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vmware-tanzu-labs/yaml-overlay-tool/releases/download/v0.5.1/yot_v0.5.1_Darwin_x86_64.tar.gz"
-      sha256 "bcbb71ed44d17249d00c67fd8087cd2f667df251bb31c69b5128bff517dde7cf"
+      url "https://github.com/vmware-tanzu-labs/yaml-overlay-tool/releases/download/v0.6.0/yot_v0.6.0_Darwin_x86_64.tar.gz"
+      sha256 "b6d4ed6deae332c23f5d3ed7b73708253a268386045300648cfbe20b37829aa7"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vmware-tanzu-labs/yaml-overlay-tool/releases/download/v0.5.1/yot_v0.5.1_Darwin_arm64.tar.gz"
-      sha256 "a31d227bb7e9da6d6a82a53a356716650475a43b5b1dd068afdc1def13a1b079"
+      url "https://github.com/vmware-tanzu-labs/yaml-overlay-tool/releases/download/v0.6.0/yot_v0.6.0_Darwin_arm64.tar.gz"
+      sha256 "2e4235274814d79cfa1f68afc595cff9acc2c49ab6dfd2292b53a86612252706"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/vmware-tanzu-labs/yaml-overlay-tool/releases/download/v0.5.1/yot_v0.5.1_Linux_x86_64.tar.gz"
-      sha256 "b944f70b39177d9c2a49a6ebba19c1543249afe45c9690db2fefc4155de02c79"
+      url "https://github.com/vmware-tanzu-labs/yaml-overlay-tool/releases/download/v0.6.0/yot_v0.6.0_Linux_x86_64.tar.gz"
+      sha256 "33202e40766743d77409aab5d78257b37e228276567804293788bfeb04841aab"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vmware-tanzu-labs/yaml-overlay-tool/releases/download/v0.5.1/yot_v0.5.1_Linux_arm64.tar.gz"
-      sha256 "e3e655fc6f1a7d13f1dcc468d760e0ac002c9d167b11c6554a4aefcb0761454e"
+      url "https://github.com/vmware-tanzu-labs/yaml-overlay-tool/releases/download/v0.6.0/yot_v0.6.0_Linux_arm64.tar.gz"
+      sha256 "1b376c9f67821bc01ff5444ecbdb40ff88c40e4195eac5d265946935eb079f36"
     end
   end
 

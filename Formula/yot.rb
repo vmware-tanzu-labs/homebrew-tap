@@ -5,29 +5,29 @@
 class Yot < Formula
   desc "A YAML Overlay Tool with templating tendencies."
   homepage "https://github.com/vmware-tanzu-labs/yaml-overlay-tool"
-  version "0.6.2"
+  version "0.6.3"
   license "MIT"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vmware-tanzu-labs/yaml-overlay-tool/releases/download/v0.6.2/yot_v0.6.2_Darwin_x86_64.tar.gz"
-      sha256 "7e810f27afedfae2ea794a6b9abe209a14b23d77b0fb1d87c8d474eb6affebd9"
+      url "https://github.com/vmware-tanzu-labs/yaml-overlay-tool/releases/download/v0.6.3/yot_v0.6.3_Darwin_x86_64.tar.gz"
+      sha256 "ac7e20d63668fd8ff86c9b6561d84c79288e9652a5d0c3dbda4482ef7c38df6d"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vmware-tanzu-labs/yaml-overlay-tool/releases/download/v0.6.2/yot_v0.6.2_Darwin_arm64.tar.gz"
-      sha256 "ca1736068ef2ef82c173678f52ca903de6f76817f9b9e18eb8d009df13f02b61"
+      url "https://github.com/vmware-tanzu-labs/yaml-overlay-tool/releases/download/v0.6.3/yot_v0.6.3_Darwin_arm64.tar.gz"
+      sha256 "02f90d9967e68a35b84139fc2a0574680de48f6e3bd1d56ec1fcf9a65f8dd5bb"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/vmware-tanzu-labs/yaml-overlay-tool/releases/download/v0.6.2/yot_v0.6.2_Linux_x86_64.tar.gz"
-      sha256 "a3e5b1b08df2f64bfb57d3f5cd47bc54ec3498fdcb09c76e5eedf726aaa203fb"
+      url "https://github.com/vmware-tanzu-labs/yaml-overlay-tool/releases/download/v0.6.3/yot_v0.6.3_Linux_x86_64.tar.gz"
+      sha256 "49e9ff9de72ce40efebfd2fecf45cc089f55a17e2d651b31b435229c85c67da2"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vmware-tanzu-labs/yaml-overlay-tool/releases/download/v0.6.2/yot_v0.6.2_Linux_arm64.tar.gz"
-      sha256 "69df74cb44024d6ccf2af30e8737b9f0e9632a9e51b610258fa603f6f8bc466a"
+      url "https://github.com/vmware-tanzu-labs/yaml-overlay-tool/releases/download/v0.6.3/yot_v0.6.3_Linux_arm64.tar.gz"
+      sha256 "bd7abfabcb13be583775f935a7298b832334b8e85aa20841197e941877f77c7e"
     end
   end
 

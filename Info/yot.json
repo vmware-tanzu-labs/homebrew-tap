@@ -1,0 +1,54 @@
+{
+  "name": "yot",
+  "full_name": "yot",
+  "tap": null,
+  "oldname": null,
+  "aliases": [],
+  "versioned_formulae": [],
+  "desc": "A YAML Overlay Tool with templating tendencies.",
+  "license": "MIT",
+  "homepage": "https://github.com/vmware-tanzu-labs/yaml-overlay-tool",
+  "versions": {
+    "stable": "0.6.4",
+    "head": null,
+    "bottle": false
+  },
+  "urls": {
+    "stable": {
+      "url": "https://github.com/vmware-tanzu-labs/yaml-overlay-tool/releases/download/v0.6.4/yot_v0.6.4_Darwin_x86_64.tar.gz",
+      "tag": null,
+      "revision": null
+    }
+  },
+  "revision": 0,
+  "version_scheme": 0,
+  "bottle": {},
+  "keg_only": false,
+  "bottle_disabled": true,
+  "options": [
+    {
+      "option": "--with-kubectl",
+      "description": "Build with kubectl support"
+    }
+  ],
+  "build_dependencies": [],
+  "dependencies": [],
+  "recommended_dependencies": [],
+  "optional_dependencies": [
+    "kubectl"
+  ],
+  "uses_from_macos": [],
+  "requirements": [],
+  "conflicts_with": [],
+  "caveats": null,
+  "installed": [],
+  "linked_keg": null,
+  "pinned": false,
+  "outdated": false,
+  "deprecated": false,
+  "deprecation_date": null,
+  "deprecation_reason": null,
+  "disabled": false,
+  "disable_date": null,
+  "disable_reason": null
+}

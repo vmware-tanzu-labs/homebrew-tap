@@ -1,0 +1,57 @@
+{
+  "name": "operator-builder",
+  "full_name": "operator-builder",
+  "tap": null,
+  "oldname": null,
+  "aliases": [],
+  "versioned_formulae": [],
+  "desc": "A Kubebuilder plugin to accelerate the development of Kubernetes operators.",
+  "license": "MIT",
+  "homepage": "https://github.com/vmware-tanzu-labs/operator-builder",
+  "versions": {
+    "stable": "0.3.0",
+    "head": null,
+    "bottle": false
+  },
+  "urls": {
+    "stable": {
+      "url": "https://github.com/vmware-tanzu-labs/operator-builder/releases/download/v0.3.0/operator-builder_v0.3.0_Darwin_x86_64.tar.gz",
+      "tag": null,
+      "revision": null
+    }
+  },
+  "revision": 0,
+  "version_scheme": 0,
+  "bottle": {},
+  "keg_only": false,
+  "bottle_disabled": true,
+  "options": [
+    {
+      "option": "--with-make",
+      "description": "Build with make support"
+    }
+  ],
+  "build_dependencies": [],
+  "dependencies": [
+    "kubectl",
+    "golang"
+  ],
+  "recommended_dependencies": [],
+  "optional_dependencies": [
+    "make"
+  ],
+  "uses_from_macos": [],
+  "requirements": [],
+  "conflicts_with": [],
+  "caveats": null,
+  "installed": [],
+  "linked_keg": null,
+  "pinned": false,
+  "outdated": false,
+  "deprecated": false,
+  "deprecation_date": null,
+  "deprecation_reason": null,
+  "disabled": false,
+  "disable_date": null,
+  "disable_reason": null
+}

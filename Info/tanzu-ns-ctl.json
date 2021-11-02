@@ -1,0 +1,49 @@
+{
+  "name": "tanzu-ns-ctl",
+  "full_name": "tanzu-ns-ctl",
+  "tap": null,
+  "oldname": null,
+  "aliases": [],
+  "versioned_formulae": [],
+  "desc": "A Kubernetes operator which applies namespace tenancy best practices.",
+  "license": "MIT",
+  "homepage": "https://github.com/vmware-tanzu-labs/namespace-operator",
+  "versions": {
+    "stable": "0.2.0",
+    "head": null,
+    "bottle": false
+  },
+  "urls": {
+    "stable": {
+      "url": "https://github.com/vmware-tanzu-labs/namespace-operator/releases/download/v0.2.0/tanzu-ns-ctl_v0.2.0_Darwin_x86_64.tar.gz",
+      "tag": null,
+      "revision": null
+    }
+  },
+  "revision": 0,
+  "version_scheme": 0,
+  "bottle": {},
+  "keg_only": false,
+  "bottle_disabled": false,
+  "options": [],
+  "build_dependencies": [],
+  "dependencies": [
+    "kubectl"
+  ],
+  "recommended_dependencies": [],
+  "optional_dependencies": [],
+  "uses_from_macos": [],
+  "requirements": [],
+  "conflicts_with": [],
+  "caveats": null,
+  "installed": [],
+  "linked_keg": null,
+  "pinned": false,
+  "outdated": false,
+  "deprecated": false,
+  "deprecation_date": null,
+  "deprecation_reason": null,
+  "disabled": false,
+  "disable_date": null,
+  "disable_reason": null
+}

@@ -9,13 +9,13 @@
   "license": "MIT",
   "homepage": "https://github.com/vmware-tanzu-labs/operator-builder",
   "versions": {
-    "stable": "0.5.0",
+    "stable": "0.5.1",
     "head": null,
     "bottle": false
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/vmware-tanzu-labs/operator-builder/releases/download/v0.5.0/operator-builder_v0.5.0_Darwin_x86_64.tar.gz",
+      "url": "https://github.com/vmware-tanzu-labs/operator-builder/releases/download/v0.5.1/operator-builder_v0.5.1_Darwin_x86_64.tar.gz",
       "tag": null,
       "revision": null
     }
@@ -24,6 +24,7 @@
   "version_scheme": 0,
   "bottle": {},
   "keg_only": false,
+  "keg_only_reason": null,
   "bottle_disabled": false,
   "options": [
     {

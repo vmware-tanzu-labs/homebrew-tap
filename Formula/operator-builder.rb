@@ -5,13 +5,13 @@
 class OperatorBuilder < Formula
   desc "A Kubebuilder plugin to accelerate the development of Kubernetes operators."
   homepage "https://github.com/vmware-tanzu-labs/operator-builder"
-  version "0.5.0"
+  version "0.5.1"
   license "MIT"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/vmware-tanzu-labs/operator-builder/releases/download/v0.5.0/operator-builder_v0.5.0_Darwin_arm64.tar.gz"
-      sha256 "df662f132d26ccd6da5ace6547702aed1d545afab96cdf13efbdca0333da5715"
+    if Hardware::CPU.intel?
+      url "https://github.com/vmware-tanzu-labs/operator-builder/releases/download/v0.5.1/operator-builder_v0.5.1_Darwin_x86_64.tar.gz"
+      sha256 "b066a9292870d67e705d194e0fb8f13b07d07a1f3337d08af0f76e1e2d77c8e1"
 
       def install
         bin.install "operator-builder"
@@ -20,9 +20,9 @@ class OperatorBuilder < Formula
         fish_completion.install "completions/operator-builder.fish"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/vmware-tanzu-labs/operator-builder/releases/download/v0.5.0/operator-builder_v0.5.0_Darwin_x86_64.tar.gz"
-      sha256 "4c0771be404d9b3c72838f560e53b208c1b9936ca1b89dc4750a5afa2515d45a"
+    if Hardware::CPU.arm?
+      url "https://github.com/vmware-tanzu-labs/operator-builder/releases/download/v0.5.1/operator-builder_v0.5.1_Darwin_arm64.tar.gz"
+      sha256 "509f97a945a663101310787ed9f0a4e50a0d3ddddc7e32cc0ae0c792b69508e6"
 
       def install
         bin.install "operator-builder"
@@ -34,9 +34,9 @@ class OperatorBuilder < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vmware-tanzu-labs/operator-builder/releases/download/v0.5.0/operator-builder_v0.5.0_Linux_arm64.tar.gz"
-      sha256 "74c086a2ccc17db52b47dcdc8506af903918b884ce93b47bd4ad1bf977568fc2"
+    if Hardware::CPU.intel?
+      url "https://github.com/vmware-tanzu-labs/operator-builder/releases/download/v0.5.1/operator-builder_v0.5.1_Linux_x86_64.tar.gz"
+      sha256 "60803cc93be2a169e0eae95dee6daec388205de09fb0a11c98056e63b0ddd399"
 
       def install
         bin.install "operator-builder"
@@ -45,9 +45,9 @@ class OperatorBuilder < Formula
         fish_completion.install "completions/operator-builder.fish"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/vmware-tanzu-labs/operator-builder/releases/download/v0.5.0/operator-builder_v0.5.0_Linux_x86_64.tar.gz"
-      sha256 "8607041e7aeb7dd195f047651ba4e42dfb71ea1d5b63df358013e5a49b388faa"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/vmware-tanzu-labs/operator-builder/releases/download/v0.5.1/operator-builder_v0.5.1_Linux_arm64.tar.gz"
+      sha256 "83fa28e025f4dfb29bc03cf18ce499a05e221c576a5601c434d90fb0b564a581"
 
       def install
         bin.install "operator-builder"

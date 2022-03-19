@@ -7,7 +7,6 @@ class Yot < Formula
   homepage "https://github.com/vmware-tanzu-labs/yaml-overlay-tool"
   version "0.6.4"
   license "MIT"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?

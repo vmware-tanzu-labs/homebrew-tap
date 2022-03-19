@@ -5,39 +5,60 @@
 class Yot < Formula
   desc "A YAML Overlay Tool with templating tendencies."
   homepage "https://github.com/vmware-tanzu-labs/yaml-overlay-tool"
-  version "0.6.4"
+  version "0.6.5"
   license "MIT"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/vmware-tanzu-labs/yaml-overlay-tool/releases/download/v0.6.4/yot_v0.6.4_Darwin_x86_64.tar.gz"
-      sha256 "8ca4735f1ce2342a43fa3370a2931d843a4ae1f7647db76eb38b0e3cfaf6b839"
-    end
     if Hardware::CPU.arm?
-      url "https://github.com/vmware-tanzu-labs/yaml-overlay-tool/releases/download/v0.6.4/yot_v0.6.4_Darwin_arm64.tar.gz"
-      sha256 "dced765adbbff317488b0865494ce5810c948db9d871302ddc148f5cdd316d82"
+      url "https://github.com/vmware-tanzu-labs/yaml-overlay-tool/releases/download/v0.6.5/yot_v0.6.5_Darwin_arm64.tar.gz"
+      sha256 "8c2fd51f100c0162ba8902b4d130b5cb5a889df3d03394ec7ce933c07709864d"
+
+      def install
+        bin.install "yot"
+        bash_completion.install "completions/yot.bash" => "yot"
+        zsh_completion.install "completions/yot.zsh" => "_yot"
+        fish_completion.install "completions/yot.fish"
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/vmware-tanzu-labs/yaml-overlay-tool/releases/download/v0.6.5/yot_v0.6.5_Darwin_x86_64.tar.gz"
+      sha256 "33566815f59991debb8a7c99a526976d944fc75a83b277d3bb5ed2123bfef5d9"
+
+      def install
+        bin.install "yot"
+        bash_completion.install "completions/yot.bash" => "yot"
+        zsh_completion.install "completions/yot.zsh" => "_yot"
+        fish_completion.install "completions/yot.fish"
+      end
     end
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/vmware-tanzu-labs/yaml-overlay-tool/releases/download/v0.6.4/yot_v0.6.4_Linux_x86_64.tar.gz"
-      sha256 "9ab6a021c4bb931941e4ac32890201381332bb2b6ea8859c554a48da045fda5f"
-    end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/vmware-tanzu-labs/yaml-overlay-tool/releases/download/v0.6.4/yot_v0.6.4_Linux_arm64.tar.gz"
-      sha256 "d0a92a131e7ca840320a91cd0d28b2a06ae04dd22f9aeeaa2d0b52d1d484cc4f"
+      url "https://github.com/vmware-tanzu-labs/yaml-overlay-tool/releases/download/v0.6.5/yot_v0.6.5_Linux_arm64.tar.gz"
+      sha256 "ecfab955368fa354860f34a3ceb82243cf63b15b4c9f6499c25a757fa3cca28b"
+
+      def install
+        bin.install "yot"
+        bash_completion.install "completions/yot.bash" => "yot"
+        zsh_completion.install "completions/yot.zsh" => "_yot"
+        fish_completion.install "completions/yot.fish"
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/vmware-tanzu-labs/yaml-overlay-tool/releases/download/v0.6.5/yot_v0.6.5_Linux_x86_64.tar.gz"
+      sha256 "070c1398f38929a6015d1a61e896cc7d0cf21994247c0376009423deec4319b1"
+
+      def install
+        bin.install "yot"
+        bash_completion.install "completions/yot.bash" => "yot"
+        zsh_completion.install "completions/yot.zsh" => "_yot"
+        fish_completion.install "completions/yot.fish"
+      end
     end
   end
 
   depends_on "kubectl" => :optional
-
-  def install
-    bin.install "yot"
-    bash_completion.install "completions/yot.bash" => "yot"
-    zsh_completion.install "completions/yot.zsh" => "_yot"
-    fish_completion.install "completions/yot.fish"
-  end
 
   test do
     system "#{bin}/yot --version"

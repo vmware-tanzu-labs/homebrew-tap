@@ -25,7 +25,7 @@
   "bottle": {},
   "keg_only": false,
   "keg_only_reason": null,
-  "bottle_disabled": true,
+  "bottle_disabled": false,
   "options": [
     {
       "option": "--with-kubectl",

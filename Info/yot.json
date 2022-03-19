@@ -9,13 +9,13 @@
   "license": "MIT",
   "homepage": "https://github.com/vmware-tanzu-labs/yaml-overlay-tool",
   "versions": {
-    "stable": "0.6.4",
+    "stable": "0.6.5",
     "head": null,
     "bottle": false
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/vmware-tanzu-labs/yaml-overlay-tool/releases/download/v0.6.4/yot_v0.6.4_Darwin_x86_64.tar.gz",
+      "url": "https://github.com/vmware-tanzu-labs/yaml-overlay-tool/releases/download/v0.6.5/yot_v0.6.5_Darwin_x86_64.tar.gz",
       "tag": null,
       "revision": null
     }
